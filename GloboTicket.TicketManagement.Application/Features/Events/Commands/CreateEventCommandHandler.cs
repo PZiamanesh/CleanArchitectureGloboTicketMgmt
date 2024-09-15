@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using GloboTicket.TicketManagement.Application.Contracts.Presistence;
-using GloboTicket.TicketManagement.Application.Exceptions;
-using GloboTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent;
+using GloboTicket.TicketManagement.Application.Contracts.Exceptions;
+using GloboTicket.TicketManagement.Application.Contracts.Persistence;
+using GloboTicket.TicketManagement.Application.Features.Events.Validators;
 using GloboTicket.TicketManagement.Domain.Entities;
 using MediatR;
 

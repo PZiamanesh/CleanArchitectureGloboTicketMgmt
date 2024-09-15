@@ -1,8 +1,8 @@
-﻿namespace GloboTicket.TicketManagement.Application.Contracts.Presistence
+﻿namespace GloboTicket.TicketManagement.Application.Contracts.Persistence
 {
     public interface IAsyncRepository<T> where T : class
     {
-        Task<T> GetByIdAsync(Guid id);
+        Task<T?> GetByIdAsync(Guid id);
 
         Task<IReadOnlyList<T>> ListAllAsync();
 

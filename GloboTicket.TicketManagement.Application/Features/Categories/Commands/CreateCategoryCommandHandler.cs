@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GloboTicket.TicketManagement.Application.Contracts.Presistence;
+using GloboTicket.TicketManagement.Application.Contracts.Persistence;
 using GloboTicket.TicketManagement.Application.Features.Categories.Validators;
 using GloboTicket.TicketManagement.Application.Features.Categories.ViewModels;
 using GloboTicket.TicketManagement.Domain.Entities;
