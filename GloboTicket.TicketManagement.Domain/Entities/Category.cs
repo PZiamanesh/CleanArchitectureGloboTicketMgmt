@@ -7,6 +7,6 @@ namespace GloboTicket.TicketManagement.Domain.Entities
     {
         public Guid CategoryId { get; set; }
         public string Name { get; set; } = string.Empty;
-        public ICollection<Event>? Events { get; set; } = new HashSet<Event>();
+        public ICollection<Event> Events { get; set; } = new HashSet<Event>();
     }
 }
