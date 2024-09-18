@@ -12,7 +12,7 @@ namespace GloboTicket.TicketManagement.Persistence
         {
             services.AddDbContext<GloboTicketDbContext>(ops =>
             {
-                ops.UseSqlServer(configuration.GetConnectionString("GloboTicketConnString"));
+                ops.UseSqlServer(configuration.GetConnectionString("GloboTicketTicketManagementConnectionString"));
             });
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));

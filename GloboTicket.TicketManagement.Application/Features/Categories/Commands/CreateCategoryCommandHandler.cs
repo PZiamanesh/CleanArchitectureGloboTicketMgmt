@@ -28,7 +28,7 @@ namespace GloboTicket.TicketManagement.Application.Features.Categories.Commands
             if (validationResult.Errors.Any())
             {
                 createCategoryCommandResponse.Success = false;
-                createCategoryCommandResponse.ValidationErrors = [.. validationResult.Errors.Select(e => e.ErrorMessage)];
+                createCategoryCommandResponse.ValidationErrors = [..validationResult.Errors.Select(e => e.ErrorMessage)];
                 //foreach (var error in validationResult.Errors)
                 //{
                 //    createCategoryCommandResponse.ValidationErrors.Add(error.ErrorMessage);
