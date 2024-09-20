@@ -1,5 +1,6 @@
 ﻿using GloboTicket.TicketManagement.Application.Contracts.Infrastructure;
 using GloboTicket.TicketManagement.Application.Models.Mail;
+using GloboTicket.TicketManagement.Infrastructure.FileExport;
 using GloboTicket.TicketManagement.Infrastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,8 @@ namespace GloboTicket.TicketManagement.Infrastructure
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<IEmailService, EmailService>();
+
+            services.AddTransient<ICsvExporter, CsvExporter>();
 
             return services;
         }

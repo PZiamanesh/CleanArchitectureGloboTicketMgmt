@@ -2,6 +2,7 @@
 using GloboTicket.TicketManagement.Application.Features.Categories.Commands;
 using GloboTicket.TicketManagement.Application.Features.Categories.ViewModels;
 using GloboTicket.TicketManagement.Application.Features.Events.Commands;
+using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventsExport;
 using GloboTicket.TicketManagement.Application.Features.Events.ViewModels;
 using GloboTicket.TicketManagement.Domain.Entities;
 
@@ -15,6 +16,7 @@ namespace GloboTicket.TicketManagement.Application.Profiles
             CreateMap<Event, EventDetailVm>().ReverseMap();
             CreateMap<Event, EventDto>().ReverseMap();
             CreateMap<Event, UpdateEventCommand>().ReverseMap();
+            CreateMap<Event, EventExportDto>().ReverseMap();
 
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Category, CategoryListVm>().ReverseMap();
